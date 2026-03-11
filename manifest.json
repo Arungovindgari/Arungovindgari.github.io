@@ -1,0 +1,17 @@
+{
+  "name": "Arun Govindgari — Data Engineer",
+  "short_name": "Arun Portfolio",
+  "description": "Azure Data Engineer | Python | PySpark | MS Data Science",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1120",
+  "theme_color": "#00C8FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B1120'/><text y='.9em' font-size='80' font-family='Arial' font-weight='bold' fill='%2300C8FF' x='10'>AG</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

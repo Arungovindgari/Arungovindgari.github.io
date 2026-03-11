@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Arun Govindgari | Data Engineer &amp; Analyst</title>
+  <meta name="description" content="Arun Govindgari — Azure Data Engineer, Python &amp; Spark specialist, MS Data Science (UNT).">
+  <meta name="keywords" content="Data Engineer, Azure, Databricks, PySpark, ETL, Data Analyst, Python, SQL, Denton TX">
+  <meta name="author" content="Arun Govindgari">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Arun Govindgari | Data Engineer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Arungovindgari.github.io">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <style>
+    /* SVG icon helper — works fully offline, no font CDN needed */
+    .si    { display:inline-block; width:1em; height:1em; vertical-align:-0.13em; fill:currentColor; flex-shrink:0; }
+    .si-lg { width:1.35em; height:1.35em; }
+    .si-xl { width:1.7em;  height:1.7em;  }
+    /* ── REVEAL SYSTEM ──────────────────────────────────────────
+       Default: always visible (safe fallback).
+       Once JS runs it adds .js-loaded to <html> which enables
+       the fade-in animation.  The .visible class shows the element.
+    ───────────────────────────────────────────────────────────── */
+    .reveal { opacity:1; transform:none; }
+    html.js-loaded .reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease,transform .6s ease; }
+    html.js-loaded .reveal.visible { opacity:1; transform:none; }
+    /* Tooltip cursor on stats */
+    .arun-stat[title] { cursor:help; }
+    /* Emoji-based skill icons */
+    .skill-emoji { font-size:1.25rem; line-height:1; }
+  </style>
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00C8FF">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ═══ SVG SPRITE — all icons live here, referenced with <use> ═══════
+     100% offline, zero CDN dependency for icons                        -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></symbol>
+  <symbol id="i-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 16 16"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 16 16"><path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></symbol>
+  <symbol id="i-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 16 16"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></symbol>
+  <symbol id="i-spin" viewBox="0 0 16 16"><path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/><path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/></symbol>
+</svg>
+
+<!-- PRELOADER -->
+<div id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-inner">
+    <div class="preloader-ring"></div>
+    <span class="preloader-text">AG</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="#arun" aria-label="Home">
+      <span class="brand-text">AG</span>
+      <span class="brand-dot" aria-hidden="true">●</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center gap-2">
+        <button id="themeToggle" class="btn btn-theme-toggle" aria-label="Switch to light mode" title="Toggle theme">
+          <svg class="si" id="themeIcon"><use href="#i-moon"/></svg>
+        </button>
+        <a href="assets/Arun_Govindgari_Resume.docx" download class="btn btn-outline-accent btn-sm">
+          <svg class="si me-1"><use href="#i-dl"/></svg>Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- arun -->
+<section id="arun" class="arun-section" aria-label="Introduction">
+  <canvas id="arunCanvas" aria-hidden="true"></canvas>
+  <div class="arun-grid-overlay" aria-hidden="true"></div>
+  <div class="container arun-content">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-8 col-xl-7">
+        <p class="arun-greeting fade-in-up" style="--delay:.1s">
+          <span class="greeting-line" aria-hidden="true"></span>Hello, I'm
+        </p>
+        <h1 class="arun-name fade-in-up" style="--delay:.2s">Arun<br>Govindgari</h1>
+        <div class="arun-title-wrap fade-in-up" style="--delay:.35s" aria-live="polite">
+          <span class="arun-title-prefix">I build </span>
+          <span id="typingText" class="arun-typed"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="arun-desc fade-in-up" style="--delay:.5s">MS Data Science · Azure Data Engineer · 3+ Years Building Scalable Pipelines</p>
+
+        <!-- STATS — hover each one to see the explanation -->
+        <div class="arun-stats fade-in-up" style="--delay:.6s" role="list">
+          <div class="arun-stat" role="listitem" title="3+ years total professional experience across HCL Technologies and Vicerion Corp">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Yrs Experience</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="arun-stat" role="listitem" title="Reduced manual data processing by 60% at Vicerion Corp using Python automation">
+            <span class="stat-num">60%</span>
+            <span class="stat-label">Less Manual Work</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="arun-stat" role="listitem" title="Master of Science in Data Science, University of North Texas — GPA 4.0/4.0">
+            <span class="stat-num">4.0</span>
+            <span class="stat-label">MS GPA @ UNT</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="arun-stat" role="listitem" title="Improved Spark pipeline execution speed by 40% through parallel processing and query optimisation">
+            <span class="stat-num">40%</span>
+            <span class="stat-label">Faster Pipelines</span>
+          </div>
+        </div>
+
+        <div class="arun-cta fade-in-up" style="--delay:.75s">
+          <a href="#projects" class="btn btn-accent">
+            <svg class="si me-2"><use href="#i-grid"/></svg>View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline-accent ms-3">
+            <svg class="si me-2"><use href="#i-send"/></svg>Get In Touch
+          </a>
+        </div>
+
+        <!-- SOCIAL ICONS — real SVG, no font CDN needed -->
+        <div class="arun-socials fade-in-up" style="--delay:.9s">
+          <a href="https://github.com/Arungovindgari" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="GitHub: github.com/Arungovindgari">
+            <svg class="si si-lg"><use href="#i-github"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/arungovindgari" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="LinkedIn: linkedin.com/in/arungovindgari">
+            <svg class="si si-lg"><use href="#i-linkedin"/></svg>
+          </a>
+          <a href="mailto:arungovindgari09@gmail.com"
+             class="social-icon" aria-label="Email: arungovindgari09@gmail.com">
+            <svg class="si si-lg"><use href="#i-envelope"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-xl-5 d-none d-lg-flex justify-content-end fade-in-up" style="--delay:.4s" aria-hidden="true">
+        <div class="arun-visual">
+          <div class="pipeline-diagram">
+            <div class="pipe-node node-source">☁️<span>Source</span></div>
+            <div class="pipe-line animated-flow"></div>
+            <div class="pipe-node node-transform">⚡<span>Transform</span></div>
+            <div class="pipe-line animated-flow" style="--flow-delay:.5s"></div>
+            <div class="pipe-node node-load">🗄️<span>Load</span></div>
+            <div class="pipe-line animated-flow" style="--flow-delay:1s"></div>
+            <div class="pipe-node node-analytics">📊<span>Analyze</span></div>
+          </div>
+          <div class="floating-badge badge-azure">Azure</div>
+          <div class="floating-badge badge-spark">PySpark</div>
+          <div class="floating-badge badge-python">Python</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-block" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">WHO I AM</span>
+      <h2 id="about-heading">About Me</h2>
+    </div>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal">
+        <div class="about-visual">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar">
+              <span class="avatar-initials">AG</span>
+              <div class="avatar-ring r1"></div>
+              <div class="avatar-ring r2"></div>
+            </div>
+            <div class="about-badge-stack">
+              <div class="about-badge">🎓 MS Data Science · 4.0 GPA @ UNT</div>
+              <div class="about-badge">📍 Denton, TX · Open to Relocation</div>
+              <div class="about-badge">⚡ Open to New Opportunities</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="about-content">
+          <p class="about-lead">I'm a <strong>Data Engineer</strong> passionate about building infrastructure that turns raw data into decisions.</p>
+          <p class="about-body">Currently at <strong>Vicerion Corp</strong>, I design Azure-based ETL pipelines handling healthcare data with HIPAA/FHIR compliance. I hold an <strong>MS in Data Science from UNT</strong> (4.0 GPA) and previously worked at <strong>HCL Technologies</strong> building ETL workflows and Angular dashboards for biomedical research.</p>
+          <p class="about-body">I come from a small village in Telangana, India — the first in my family to pursue a master's degree. That drive is what brings me to data engineering: where technical precision meets real-world impact.</p>
+          <div class="about-details-grid">
+            <div class="about-detail-item"><span class="detail-label">Location</span><span class="detail-value">Denton, TX 76209</span></div>
+            <div class="about-detail-item"><span class="detail-label">Email</span><span class="detail-value">arungovindgari09@gmail.com</span></div>
+            <div class="about-detail-item"><span class="detail-label">Focus</span><span class="detail-value">Azure · Data Engineering · Analytics</span></div>
+            <div class="about-detail-item"><span class="detail-label">Status</span><span class="detail-value status-open"><span class="status-dot"></span>Open to New Roles</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section-block section-alt" aria-labelledby="skills-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">EXPERTISE</span>
+      <h2 id="skills-heading">Technical Skills</h2>
+    </div>
+    <div class="skills-tabs reveal" role="tablist">
+      <button class="skill-tab active" data-category="all" role="tab" aria-selected="true">All</button>
+      <button class="skill-tab" data-category="azure" role="tab" aria-selected="false">Azure Cloud</button>
+      <button class="skill-tab" data-category="data-eng" role="tab" aria-selected="false">Data Engineering</button>
+      <button class="skill-tab" data-category="languages" role="tab" aria-selected="false">Languages</button>
+      <button class="skill-tab" data-category="databases" role="tab" aria-selected="false">Databases</button>
+      <button class="skill-tab" data-category="devops" role="tab" aria-selected="false">DevOps</button>
+    </div>
+    <div id="skillsGrid" class="skills-grid reveal" role="list">
+      <div class="skill-card" data-category="azure" role="listitem"><div class="skill-icon skill-emoji">🏭</div><span class="skill-name">Azure Data Factory</span><div class="skill-bar"><div class="skill-fill" style="--fill:90%"></div></div></div>
+      <div class="skill-card" data-category="azure" role="listitem"><div class="skill-icon skill-emoji">⚡</div><span class="skill-name">Databricks</span><div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div></div>
+      <div class="skill-card" data-category="azure" role="listitem"><div class="skill-icon skill-emoji">🔗</div><span class="skill-name">Synapse Analytics</span><div class="skill-bar"><div class="skill-fill" style="--fill:80%"></div></div></div>
+      <div class="skill-card" data-category="azure" role="listitem"><div class="skill-icon skill-emoji">💾</div><span class="skill-name">ADLS Gen2</span><div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div></div>
+      <div class="skill-card" data-category="azure" role="listitem"><div class="skill-icon skill-emoji">🛠️</div><span class="skill-name">Azure DevOps</span><div class="skill-bar"><div class="skill-fill" style="--fill:80%"></div></div></div>
+      <div class="skill-card" data-category="languages" role="listitem"><div class="skill-icon skill-emoji">🐍</div><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--fill:92%"></div></div></div>
+      <div class="skill-card" data-category="languages" role="listitem"><div class="skill-icon skill-emoji">🗃️</div><span class="skill-name">SQL / T-SQL</span><div class="skill-bar"><div class="skill-fill" style="--fill:90%"></div></div></div>
+      <div class="skill-card" data-category="languages" role="listitem"><div class="skill-icon skill-emoji">🔥</div><span class="skill-name">PySpark</span><div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div></div>
+      <div class="skill-card" data-category="languages" role="listitem"><div class="skill-icon skill-emoji">{ }</div><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--fill:75%"></div></div></div>
+      <div class="skill-card" data-category="data-eng" role="listitem"><div class="skill-icon skill-emoji">🔥</div><span class="skill-name">Apache Spark</span><div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div></div>
+      <div class="skill-card" data-category="data-eng" role="listitem"><div class="skill-icon skill-emoji">🏔️</div><span class="skill-name">Delta Lake</span><div class="skill-bar"><div class="skill-fill" style="--fill:80%"></div></div></div>
+      <div class="skill-card" data-category="data-eng" role="listitem"><div class="skill-icon skill-emoji">⇄</div><span class="skill-name">ETL/ELT Pipelines</span><div class="skill-bar"><div class="skill-fill" style="--fill:90%"></div></div></div>
+      <div class="skill-card skill-card--learning" data-category="data-eng" role="listitem"><div class="skill-icon skill-emoji">📡</div><span class="skill-name">Apache Kafka <span class="learning-tag">Learning</span></span><div class="skill-bar"><div class="skill-fill" style="--fill:40%"></div></div></div>
+      <div class="skill-card skill-card--learning" data-category="data-eng" role="listitem"><div class="skill-icon skill-emoji">🌬️</div><span class="skill-name">Apache Airflow <span class="learning-tag">Learning</span></span><div class="skill-bar"><div class="skill-fill" style="--fill:35%"></div></div></div>
+      <div class="skill-card skill-card--learning" data-category="data-eng" role="listitem"><div class="skill-icon skill-emoji">🧱</div><span class="skill-name">dbt <span class="learning-tag">Learning</span></span><div class="skill-bar"><div class="skill-fill" style="--fill:30%"></div></div></div>
+      <div class="skill-card" data-category="databases" role="listitem"><div class="skill-icon skill-emoji">🐘</div><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" style="--fill:88%"></div></div></div>
+      <div class="skill-card" data-category="databases" role="listitem"><div class="skill-icon skill-emoji">🗄️</div><span class="skill-name">SQL Server</span><div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div></div>
+      <div class="skill-card" data-category="databases" role="listitem"><div class="skill-icon skill-emoji">🌌</div><span class="skill-name">Cosmos DB</span><div class="skill-bar"><div class="skill-fill" style="--fill:70%"></div></div></div>
+      <div class="skill-card" data-category="devops" role="listitem"><div class="skill-icon skill-emoji">🐳</div><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" style="--fill:75%"></div></div></div>
+      <div class="skill-card" data-category="devops" role="listitem"><div class="skill-icon skill-emoji">♾️</div><span class="skill-name">CI/CD Pipelines</span><div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div></div>
+      <div class="skill-card" data-category="devops" role="listitem"><div class="skill-icon"><svg class="si"><use href="#i-github"/></svg></div><span class="skill-name">GitHub Actions</span><div class="skill-bar"><div class="skill-fill" style="--fill:80%"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-block" aria-labelledby="exp-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">CAREER</span>
+      <h2 id="exp-heading">Experience</h2>
+    </div>
+    <div class="exp-tabs reveal" role="tablist">
+      <button class="exp-tab active" data-target="work-exp" role="tab" aria-selected="true">Work Experience</button>
+      <button class="exp-tab" data-target="education" role="tab" aria-selected="false">Education</button>
+    </div>
+    <div id="work-exp" class="timeline reveal" role="list">
+      <div class="timeline-item" role="listitem">
+        <div class="timeline-marker current"><div class="marker-dot"></div><div class="marker-pulse"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <div class="tl-title-group"><h3 class="tl-title">Data Engineer</h3><span class="tl-company">🏢 Vicerion Corp</span></div>
+            <div class="tl-meta"><span class="tl-period">📅 Aug 2025 – Present</span><span class="tl-location">📍 Denton, TX</span><span class="badge badge-current">Current</span></div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Designed ETL pipelines using <strong>Azure Data Factory</strong> &amp; <strong>Databricks</strong> processing healthcare datasets into HL7 FHIR-compliant formats</li>
+            <li>Automated data ingestion &amp; reporting with <strong>Python</strong> — reducing manual effort by <strong>60%</strong></li>
+            <li>Optimized <strong>Spark</strong> &amp; <strong>SQL</strong> transformations — cutting pipeline execution time by <strong>40%</strong></li>
+            <li>Configured <strong>CI/CD</strong> workflows reducing release cycle time by <strong>80%</strong></li>
+            <li>Built <strong>HIPAA/USCDI-compliant</strong> secure data handling workflows</li>
+          </ul>
+          <div class="tl-tech-stack">
+            <span class="tech-tag">Azure Data Factory</span><span class="tech-tag">Databricks</span><span class="tech-tag">PySpark</span><span class="tech-tag">HL7 FHIR</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item" role="listitem">
+        <div class="timeline-marker"><div class="marker-dot"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <div class="tl-title-group"><h3 class="tl-title">Software Engineer</h3><span class="tl-company">🏢 HCL Technologies</span></div>
+            <div class="tl-meta"><span class="tl-period">📅 Sep 2021 – Dec 2023</span><span class="tl-location">📍 Chennai, India</span></div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Designed ETL pipelines processing COR/MAX/DTISO files into <strong>SQL Server</strong> — reducing manual labor by <strong>80%</strong></li>
+            <li>Built barcode generation modules improving laboratory data traceability for thousands of samples</li>
+            <li>Developed interactive <strong>Angular</strong> dashboards for molecular data visualization</li>
+            <li>Built modular <strong>.NET 6.0</strong> backend components for diagnostic instrument configuration</li>
+            <li>Optimized <strong>SQL Server</strong> for high-volume data improving query performance significantly</li>
+          </ul>
+          <div class="tl-tech-stack">
+            <span class="tech-tag">Angular</span><span class="tech-tag">TypeScript</span><span class="tech-tag">.NET 6.0</span><span class="tech-tag">SQL Server</span><span class="tech-tag">Azure DevOps</span><span class="tech-tag">ETL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="education" class="timeline reveal" style="display:none;" role="list">
+      <div class="timeline-item" role="listitem">
+        <div class="timeline-marker current"><div class="marker-dot"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <div class="tl-title-group"><h3 class="tl-title">Master of Science — Data Science</h3><span class="tl-company">🏫 University of North Texas</span></div>
+            <div class="tl-meta"><span class="tl-period">📅 Spring 2024 – 2025</span><span class="tl-location">📍 Denton, TX</span><span class="badge badge-gpa">GPA: 4.0 / 4.0</span></div>
+          </div>
+          <div class="tl-tech-stack"><span class="tech-tag">Predictive Modeling</span><span class="tech-tag">Machine Learning</span><span class="tech-tag">Big Data</span><span class="tech-tag">AI</span><span class="tech-tag">Data Visualization</span></div>
+        </div>
+      </div>
+      <div class="timeline-item" role="listitem">
+        <div class="timeline-marker"><div class="marker-dot"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <div class="tl-title-group"><h3 class="tl-title">B.Tech — Computer Science &amp; Engineering</h3><span class="tl-company">🏫 Vidya Jyothi Institute of Technology (JNTUH)</span></div>
+            <div class="tl-meta"><span class="tl-period">📅 2017 – 2021</span><span class="tl-location">📍 Hyderabad, India</span><span class="badge badge-gpa">GPA: 9.33 / 10.0</span></div>
+          </div>
+          <div class="tl-tech-stack"><span class="tech-tag">Data Structures</span><span class="tech-tag">Algorithms</span><span class="tech-tag">DBMS</span><span class="tech-tag">Software Engineering</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-block section-alt" aria-labelledby="proj-heading">
+  <div class="container">
+    <div class="section-header reveal"><span class="section-tag">MY WORK</span><h2 id="proj-heading">Projects</h2></div>
+    <div class="projects-filter reveal" role="group">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+      <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+      <button class="filter-btn" data-filter="ai-ml">AI / LLM</button>
+    </div>
+    <div id="projectsGrid" class="projects-grid reveal" role="list">
+      <div class="project-card" data-category="data-engineering" role="listitem">
+        <div class="project-card-gradient g1"></div>
+        <div class="project-card-body">
+          <div class="project-header">
+            <div class="project-icon" style="font-size:1.5rem">☁️</div>
+            <a href="https://github.com/Arungovindgari/azure-data-pipeline" target="_blank" rel="noopener noreferrer" class="project-link"><svg class="si"><use href="#i-github"/></svg></a>
+          </div>
+          <span class="project-status status-building">🔨 Building</span>
+          <h3 class="project-title">Azure End-to-End Data Pipeline</h3>
+          <p class="project-desc">Medallion architecture: ADF ingestion → Databricks/PySpark → Synapse Analytics → Power BI dashboard. Bronze/Silver/Gold lakehouse implementation.</p>
+          <div class="project-tech"><span class="tech-pill">ADF</span><span class="tech-pill">Databricks</span><span class="tech-pill">PySpark</span><span class="tech-pill">Synapse</span><span class="tech-pill">Power BI</span><span class="tech-pill">Delta Lake</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-category="machine-learning" role="listitem">
+        <div class="project-card-gradient g2"></div>
+        <div class="project-card-body">
+          <div class="project-header">
+            <div class="project-icon" style="font-size:1.5rem">📈</div>
+            <a href="https://github.com/Arungovindgari/telecom-churn-ann" target="_blank" rel="noopener noreferrer" class="project-link"><svg class="si"><use href="#i-github"/></svg></a>
+          </div>
+          <span class="project-status status-completed">✅ Completed</span>
+          <h3 class="project-title">Telecom Churn Prediction (ANN)</h3>
+          <p class="project-desc">ML system comparing LR, SVM, Random Forest, and ANN. ANN achieved <strong>81.4% accuracy</strong> with AUC 0.86. Includes demographic-based customer segmentation.</p>
+          <div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">TensorFlow</span><span class="tech-pill">Scikit-learn</span><span class="tech-pill">Pandas</span><span class="tech-pill">Matplotlib</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-category="ai-ml" role="listitem">
+        <div class="project-card-gradient g3"></div>
+        <div class="project-card-body">
+          <div class="project-header">
+            <div class="project-icon" style="font-size:1.5rem">🤖</div>
+            <a href="https://github.com/Arungovindgari/legal-ai-assistant" target="_blank" rel="noopener noreferrer" class="project-link"><svg class="si"><use href="#i-github"/></svg></a>
+          </div>
+          <span class="project-status status-completed">✅ Completed</span>
+          <h3 class="project-title">Legal AI Assistant (RAG)</h3>
+          <p class="project-desc">AI-powered legal chatbot for individuals with disabilities using RAG. HuggingFace embeddings + LLaMA3 + ChromaDB. Built at GrandInnoHack.</p>
+          <div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">LLaMA3</span><span class="tech-pill">HuggingFace</span><span class="tech-pill">ChromaDB</span><span class="tech-pill">RAG</span><span class="tech-pill">FastAPI</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-category="data-engineering" role="listitem">
+        <div class="project-card-gradient g4"></div>
+        <div class="project-card-body">
+          <div class="project-header"><div class="project-icon" style="font-size:1.5rem">📡</div><span class="project-link coming-soon" title="Coming soon" style="font-size:.8rem;opacity:.5">🕐</span></div>
+          <span class="project-status status-planned">🗓️ Planned</span>
+          <h3 class="project-title">Real-Time Streaming Pipeline</h3>
+          <p class="project-desc">Kafka + Azure Event Hubs as message broker. Spark Structured Streaming for processing. Live Power BI dashboard for real-time metrics.</p>
+          <div class="project-tech"><span class="tech-pill">Apache Kafka</span><span class="tech-pill">Event Hubs</span><span class="tech-pill">Spark Streaming</span><span class="tech-pill">Power BI</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-category="data-engineering" role="listitem">
+        <div class="project-card-gradient g5"></div>
+        <div class="project-card-body">
+          <div class="project-header"><div class="project-icon" style="font-size:1.5rem">⚙️</div><span class="project-link coming-soon" title="Coming soon" style="font-size:.8rem;opacity:.5">🕐</span></div>
+          <span class="project-status status-planned">🗓️ Planned</span>
+          <h3 class="project-title">dbt + Airflow Analytics Platform</h3>
+          <p class="project-desc">Layered data transformation using dbt (staging → intermediate → marts). Apache Airflow for orchestration. Docker-based with data quality tests.</p>
+          <div class="project-tech"><span class="tech-pill">dbt</span><span class="tech-pill">Apache Airflow</span><span class="tech-pill">Docker</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Python</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section-block" aria-labelledby="cert-heading">
+  <div class="container">
+    <div class="section-header reveal"><span class="section-tag">CREDENTIALS</span><h2 id="cert-heading">Certifications</h2></div>
+    <div class="certs-grid reveal" role="list">
+      <div class="cert-card cert-progress" role="listitem"><div class="cert-icon">☁️</div><div class="cert-body"><h4 class="cert-name">DP-900: Azure Data Fundamentals</h4><span class="cert-issuer">Microsoft</span><div class="cert-status-bar"><div class="cert-bar-fill" style="--fill:60%"></div></div><span class="cert-badge badge-progress">In Progress</span></div></div>
+      <div class="cert-card cert-planned" role="listitem"><div class="cert-icon">⚙️</div><div class="cert-body"><h4 class="cert-name">DP-203: Azure Data Engineer Associate</h4><span class="cert-issuer">Microsoft</span><span class="cert-badge badge-planned">Planned · Q2 2026</span></div></div>
+      <div class="cert-card cert-planned" role="listitem"><div class="cert-icon">🔷</div><div class="cert-body"><h4 class="cert-name">AZ-900: Azure Fundamentals</h4><span class="cert-issuer">Microsoft</span><span class="cert-badge badge-planned">Planned · Q2 2026</span></div></div>
+      <div class="cert-card cert-planned" role="listitem"><div class="cert-icon">📊</div><div class="cert-body"><h4 class="cert-name">PL-300: Power BI Data Analyst</h4><span class="cert-issuer">Microsoft</span><span class="cert-badge badge-planned">Planned · Q3 2026</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-block section-alt" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header reveal"><span class="section-tag">GET IN TOUCH</span><h2 id="contact-heading">Contact Me</h2></div>
+    <div class="row g-5 justify-content-center">
+      <div class="col-lg-5 reveal">
+        <div class="contact-info">
+          <p class="contact-intro">Open to Data Engineer and Data Analyst opportunities. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:arungovindgari09@gmail.com" class="contact-link-item">
+              <div class="contact-link-icon"><svg class="si si-lg"><use href="#i-envelope"/></svg></div>
+              <div><span class="cl-label">Email</span><span class="cl-value">arungovindgari09@gmail.com</span></div>
+            </a>
+            <a href="https://linkedin.com/in/arungovindgari" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="contact-link-icon"><svg class="si si-lg"><use href="#i-linkedin"/></svg></div>
+              <div><span class="cl-label">LinkedIn</span><span class="cl-value">linkedin.com/in/arungovindgari</span></div>
+            </a>
+            <a href="https://github.com/Arungovindgari" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="contact-link-icon"><svg class="si si-lg"><use href="#i-github"/></svg></div>
+              <div><span class="cl-label">GitHub</span><span class="cl-value">github.com/Arungovindgari</span></div>
+            </a>
+            <div class="contact-link-item no-link">
+              <div class="contact-link-icon" style="font-size:1.1rem">📍</div>
+              <div><span class="cl-label">Location</span><span class="cl-value">Denton, TX · Open to Relocation</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 reveal">
+        <!--
+          ═══ ACTIVATE CONTACT FORM (2 minutes, FREE) ═══════════════
+          1. Go to https://formspree.io → Sign Up (free)
+          2. Click "+ New Form" → name it "Portfolio Contact"
+          3. Copy your form ID from the URL
+          4. Replace  mwvrlgkg  below with your actual ID
+             Example: action="https://formspree.io/f/xpzgkdqr"
+          5. Done! Messages arrive in your Gmail, no backend needed.
+          ════════════════════════════════════════════════════════ -->
+        <form id="contactForm"
+              action="https://formspree.io/f/mwvrlgkg"
+              method="POST"
+              class="contact-form"
+              novalidate>
+
+          <!-- Honeypot: hidden field that catches spam bots -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New message from Portfolio">
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Name <span class="req">*</span></label>
+                <input type="text" id="contactName" name="name" class="form-input" required maxlength="100" autocomplete="name" placeholder="John Doe">
+                <div class="form-error" id="nameError" role="alert"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email <span class="req">*</span></label>
+                <input type="email" id="contactEmail" name="email" class="form-input" required maxlength="200" autocomplete="email" placeholder="john@example.com">
+                <div class="form-error" id="emailError" role="alert"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label" for="contactSubject">Subject <span class="req">*</span></label>
+                <input type="text" id="contactSubject" name="subject" class="form-input" required maxlength="200" placeholder="Job Opportunity / Collaboration">
+                <div class="form-error" id="subjectError" role="alert"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Message <span class="req">*</span></label>
+                <textarea id="contactMessage" name="message" class="form-input form-textarea" required maxlength="2000" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+                <div class="form-error" id="messageError" role="alert"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-accent w-100" id="submitBtn">
+                <span id="submitText"><svg class="si me-2"><use href="#i-send"/></svg>Send Message</span>
+                <span id="submitSpinner" style="display:none"><svg class="si me-2 spin"><use href="#i-spin"/></svg>Sending...</span>
+              </button>
+            </div>
+            <div id="formSuccess" class="form-success" role="alert" style="display:none">
+              <svg class="si me-2"><use href="#i-ok"/></svg>Message sent! I'll reply within 24 hours.
+            </div>
+            <div id="formError" class="form-error-global" role="alert" style="display:none">
+              <svg class="si me-2"><use href="#i-warn"/></svg>Something went wrong — please email me directly.
+            </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg class="si"><use href="#i-up"/></svg>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+
+<!-- Service Worker: enables offline mode -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('Portfolio: offline mode ready'))
+        .catch(e => console.log('SW registration failed:', e));
+    });
+  }
+</script>
+</body>
+</html>

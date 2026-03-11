@@ -1,0 +1,133 @@
+{
+  "personal": {
+    "name": "Arun Govindgari",
+    "tagline": "Data Engineer & Analyst",
+    "titles": ["Azure Data Engineer", "Data Analyst", "ETL Architect", "PySpark Developer", "Cloud Data Specialist"],
+    "email": "arungovindgari09@gmail.com",
+    "phone": "940-297-8852",
+    "location": "Denton, TX",
+    "linkedin": "https://linkedin.com/in/arungovindgari",
+    "github": "https://github.com/Arungovindgari",
+    "summary": "Data Engineer with 3+ years of experience building scalable ETL/ELT pipelines on Azure (ADF, Databricks, Synapse). MS in Data Science from UNT. Proven track record reducing manual processing by 60% and improving pipeline performance by 40% through Spark optimization and CI/CD automation. Experienced in healthcare data engineering (HL7 FHIR, HIPAA).",
+    "stats": [
+      { "value": "3+", "label": "Years Experience" },
+      { "value": "60%", "label": "Process Automation" },
+      { "value": "40%", "label": "Performance Gain" },
+      { "value": "4.0", "label": "MS GPA" }
+    ]
+  },
+  "skills": {
+    "languages": ["Python", "SQL", "PySpark", "TypeScript", "Bash", "T-SQL"],
+    "azure": ["Azure Data Factory", "Databricks", "Synapse Analytics", "ADLS Gen2", "Azure Functions", "Azure DevOps"],
+    "dataEngineering": ["Apache Spark", "Apache Kafka", "Apache Airflow", "dbt", "Delta Lake", "Medallion Architecture", "ETL/ELT Pipelines"],
+    "databases": ["PostgreSQL", "SQL Server", "Cosmos DB", "Delta Lake"],
+    "visualization": ["Power BI", "Matplotlib", "Seaborn"],
+    "devops": ["Docker", "CI/CD", "GitHub Actions", "Azure DevOps", "IIS"],
+    "other": ["HL7 FHIR", "HIPAA Compliance", "Angular", ".NET 6.0", "FastAPI"]
+  },
+  "experience": [
+    {
+      "title": "Data Engineer",
+      "company": "Vicerion Corp",
+      "location": "Denton, TX",
+      "period": "Aug 2025 – Present",
+      "type": "current",
+      "highlights": [
+        "Designed ETL pipelines using Azure Data Factory & Databricks to process healthcare datasets into structured formats",
+        "Engineered HL7 FHIR-compliant data transformation workflows supporting patient-centric analytics",
+        "Automated data ingestion & reporting with Python — reducing manual effort by 60%",
+        "Optimized Spark & SQL transformations with PostgreSQL integration, cutting execution time by 40%",
+        "Configured CI/CD workflows reducing release cycle time by 80%",
+        "Built HIPAA/USCDI-compliant secure data handling workflows"
+      ],
+      "tech": ["Azure Data Factory", "Databricks", "PySpark", "Python", "HL7 FHIR", "PostgreSQL", "CI/CD"]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "HCL Technologies",
+      "location": "Chennai, India",
+      "period": "Sep 2021 – Dec 2023",
+      "type": "past",
+      "highlights": [
+        "Designed ETL pipelines to process COR, MAX, DTISO files into SQL databases — reducing manual labor by 80%",
+        "Built barcode generation modules improving laboratory data traceability for thousands of samples",
+        "Developed interactive Angular dashboards for molecular data visualization",
+        "Implemented CI/CD with Azure DevOps and streamlined IIS deployments",
+        "Built modular .NET 6.0 backend components for diagnostic workflows",
+        "Optimized SQL Server for high-volume data — significantly improving query performance"
+      ],
+      "tech": ["Angular", "TypeScript", ".NET 6.0", "SQL Server", "Azure DevOps", "ETL", "Python"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Azure End-to-End Data Pipeline",
+      "category": "data-engineering",
+      "description": "Complete medallion architecture pipeline ingesting public datasets via Azure Data Factory, transforming with Databricks + PySpark (Bronze/Silver/Gold), serving analytics via Synapse, and visualizing in Power BI.",
+      "tech": ["Azure Data Factory", "Databricks", "PySpark", "Synapse Analytics", "Power BI", "Delta Lake", "ADLS Gen2"],
+      "github": "https://github.com/Arungovindgari/azure-data-pipeline",
+      "demo": "#",
+      "status": "building"
+    },
+    {
+      "title": "Telecom Churn Prediction (ANN)",
+      "category": "machine-learning",
+      "description": "ML system comparing Logistic Regression, SVM, Random Forest, and ANN for customer churn prediction. Achieved 81.4% accuracy with AUC of 0.86. Includes demographic segmentation.",
+      "tech": ["Python", "TensorFlow", "Scikit-learn", "Pandas", "Matplotlib", "Jupyter"],
+      "github": "https://github.com/Arungovindgari/telecom-churn-ann",
+      "demo": "#",
+      "status": "completed"
+    },
+    {
+      "title": "Legal AI Assistant (RAG)",
+      "category": "ai-ml",
+      "description": "AI-powered legal chatbot for individuals with disabilities. Uses RAG with HuggingFace embeddings, LLaMA3, and ChromaDB vector database. Built at GrandInnoHack hackathon.",
+      "tech": ["Python", "LLaMA3", "HuggingFace", "ChromaDB", "RAG", "FastAPI", "LangChain"],
+      "github": "https://github.com/Arungovindgari/legal-ai-assistant",
+      "demo": "#",
+      "status": "completed"
+    },
+    {
+      "title": "Real-Time Streaming Pipeline",
+      "category": "data-engineering",
+      "description": "Real-time data streaming with Apache Kafka + Azure Event Hubs as broker, Spark Structured Streaming for processing, and live Power BI dashboard for metrics.",
+      "tech": ["Apache Kafka", "Azure Event Hubs", "Spark Streaming", "Azure SQL", "Power BI"],
+      "github": "#",
+      "demo": "#",
+      "status": "planned"
+    },
+    {
+      "title": "dbt + Airflow Analytics Platform",
+      "category": "data-engineering",
+      "description": "Modern data transformation platform using dbt for layered modeling (staging/intermediate/marts), Apache Airflow for orchestration, and built-in data quality testing.",
+      "tech": ["dbt", "Apache Airflow", "Docker", "PostgreSQL", "Python", "SQL"],
+      "github": "#",
+      "demo": "#",
+      "status": "planned"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science — Data Science",
+      "school": "University of North Texas",
+      "location": "Denton, TX",
+      "period": "Spring 2024 – 2025",
+      "gpa": "4.0 / 4.0",
+      "coursework": ["Predictive Modeling", "Machine Learning", "Big Data", "Data Visualization", "AI", "Data Mining"]
+    },
+    {
+      "degree": "B.Tech — Computer Science & Engineering",
+      "school": "Vidya Jyothi Institute of Technology (JNTUH)",
+      "location": "Hyderabad, India",
+      "period": "2017 – 2021",
+      "gpa": "9.33 / 10.0",
+      "coursework": ["Data Structures", "Algorithms", "Database Management", "Software Engineering", "Computer Networks"]
+    }
+  ],
+  "certifications": [
+    { "name": "DP-900: Azure Data Fundamentals", "issuer": "Microsoft", "status": "in-progress", "icon": "☁️" },
+    { "name": "DP-203: Azure Data Engineer Associate", "issuer": "Microsoft", "status": "planned", "icon": "⚙️" },
+    { "name": "AZ-900: Azure Fundamentals", "issuer": "Microsoft", "status": "planned", "icon": "🔷" },
+    { "name": "PL-300: Power BI Data Analyst", "issuer": "Microsoft", "status": "planned", "icon": "📊" }
+  ]
+}

@@ -1,0 +1,46 @@
+# Environment variables — NEVER commit these
+backend/.env
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+backend/venv/
+backend/.venv/
+backend/env/
+backend/*.egg-info/
+backend/dist/
+backend/build/
+
+# Node / Angular (future)
+node_modules/
+dist/
+.angular/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Temp / build artifacts
+*.tmp
+*.bak
+*.orig
+coverage/
+.nyc_output/
